@@ -3,7 +3,7 @@ A database management system built from scratch
 
 ### --Project Description--
 
-The goal of ft_db is to create a functional database management system that can be used to create, remove, update, and display user data. No additional libraries are allowed, so the serialization and deserialization of data must be fully implemented within the program. In addtion, a custom Query language and parser must be created for the user to direct the database management system from stdin.
+The goal of ft_db is to create a functional database management system that can be used to create, remove, update, and display user data. No additional libraries are allowed, so the serialization and deserialization of data must be fully implemented within the program. In addtion, a custom query language and parser must be created for the user to direct the database management system from stdin.
 
 The allowed functions are : ```exit, open, close, read, write, malloc and free```.
 
