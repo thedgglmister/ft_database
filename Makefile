@@ -1,4 +1,4 @@
-NAME=ft_db
+NAME= ft_database
 
 SRCDIR = srcs
 
