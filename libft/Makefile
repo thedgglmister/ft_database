@@ -4,21 +4,16 @@ SRCS = ft_memccpy.c ft_strchr.c ft_strnequ.c ft_atoi.c ft_memchr.c ft_strclr.c f
 
 OBJS = $(SRCS:.c=.o)
 
-PRINTF_OBJS = ft_printf/ft_helpers.o ft_printf/ft_parse_spec.o ft_printf/ft_get_arg_str.o ft_printf/ft_to_multibyte.o ft_printf/ft_print_spec.o ft_printf/ft_printf.o
-
 all: $(NAME)
 
 $(NAME):
-	@make -C ft_printf
 	@gcc -Wall -Wextra -Werror -I includes -c $(SRCS) 
-	@ar rc libft.a $(OBJS) $(PRINTF_OBJS)
+	@ar rc libft.a $(OBJS)
 
 clean:
-	@make clean -C ft_printf
 	@rm -f $(OBJS)
 
 fclean: clean
-	@make fclean -C ft_printf
 	@rm -f $(NAME)
 
 re: fclean all
